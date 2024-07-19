@@ -37,12 +37,10 @@ async def get_otp(client, message):
         totp = pyotp.TOTP(kode)
         sekarang = totp.now()
         await message.reply(f"<b>Current OTP : </b><code>{sekarang}</code>")
-        await message.reply(f"<b>Current OTP :</b> <code>{sekarang}</code>")
         logger.info(f"Sent OTP to {message.from_user.id}: {sekarang}")
     except Exception as e:
         await message.reply(str(e))
         logger.error(f"Error while generating OTP for {message.from_user.id}: {str(e)}")
-
 
 logger.info("Starting HAKU bot")
 HAKU.run()
