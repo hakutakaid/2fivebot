@@ -12,7 +12,7 @@
       "size": "eco"
     }
   },
-  "stack": "heroku-22",
+  "stack": "container",
   "env": {
     "API_ID": {
       "description": "Your API ID",
