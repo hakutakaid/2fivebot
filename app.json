@@ -1,0 +1,30 @@
+{
+  "name": "2FA LIVE",
+  "description": "2FA LIVE BOT",
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ],
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "eco"
+    }
+  },
+  "stack": "heroku-22",
+  "env": {
+    "API_ID": {
+      "description": "Your API ID",
+      "required": true
+    },
+    "API_HASH": {
+      "description": "Your API Hash",
+      "required": true
+    },
+    "BOT_TOKEN": {
+      "description": "Your Bot Token",
+      "required": true
+    }
+  }
+}

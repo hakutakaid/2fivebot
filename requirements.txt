@@ -1,0 +1,5 @@
+pyotp
+git+https://github.com/hakutakaid/pyrogram
+asyncio
+tgcrypto
+python-dotenv
